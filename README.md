@@ -1,5 +1,7 @@
 Currency.Exchane.API
 
+Important: Mssql is used as DB and Redis is used as Cache, so you need to have mssql and redis on your local or server.
+
 1. Change Currency.Exchange.API --> appsettings.json
 
 (DefaultConnection,
