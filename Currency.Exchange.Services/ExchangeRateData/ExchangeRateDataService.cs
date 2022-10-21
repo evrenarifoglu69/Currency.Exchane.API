@@ -58,7 +58,7 @@ namespace Currency.Exchange.Services.ExchangeRateData
 
                 //write to redis
 
-                await _redisDatabaseProvider.SetWithMinuteAsync($"{CacheKeys.ExchangeRates}:{request.FromCurrency}", serviceResponse, 300);
+                await _redisDatabaseProvider.SetWithMinuteAsync($"{CacheKeys.ExchangeRates}:{request.FromCurrency}", serviceResponse, 30);
 
                 response.Data = result;
 
